@@ -12,6 +12,7 @@ import SwiftUI
 /// A custom parameter attribute that constructs a tab bar from a closure.
 ///
 /// This is used by ``TabBarControllerPreview`` to provide an ordered list of tab bar items.
+@available(iOS 13.0.0, *)
 @resultBuilder public enum PreviewTabBarBuilder {
     public static func buildBlock(_ items: PreviewTabBarItem...) -> [UIViewController] { items.map(\.viewController) }
 }
@@ -20,6 +21,7 @@ import SwiftUI
 ///
 /// - SeeAlso: ``ViewControllerPreview``
 /// - SeeAlso: ``NavigationControllerPreview``
+@available(iOS 13.0.0, *)
 public struct TabBarControllerPreview: UIViewControllerRepresentable {
     public let tabBarController: UITabBarController
 
