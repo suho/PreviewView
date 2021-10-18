@@ -13,8 +13,10 @@ public protocol PreviewTabBarItem {
     var viewController: UIViewController { get }
 }
 
+@available(iOS 13.0.0, *)
 extension ViewControllerPreview: PreviewTabBarItem {}
 
+@available(iOS 13.0.0, *)
 extension NavigationControllerPreview: PreviewTabBarItem {
     public var viewController: UIViewController { navigationController }
 }
@@ -29,6 +31,7 @@ extension NavigationControllerPreview: PreviewTabBarItem {
 /// }
 /// ```
 /// - Important: This tab item may not be visible when your canvas is in Live Preview mode.
+@available(iOS 13.0.0, *)
 public struct PreviewBlankTabItem: PreviewTabBarItem {
     /// The view controller that backs this placeholder in the tab bar controller preview.
     public let viewController: UIViewController
