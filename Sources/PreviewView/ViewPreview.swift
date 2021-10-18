@@ -5,6 +5,8 @@
 //  Created by Josh Asbury on 7/8/21.
 //
 
+#if canImport(SwiftUI)
+
 import SwiftUI
 
 /// A type that can be used to preview in Xcode a `UIView`.
@@ -34,3 +36,5 @@ public struct ViewPreview: UIViewRepresentable {
     public func makeUIView(context: Context) -> some UIView { view }
     public func updateUIView(_ uiView: UIViewType, context: Context) {}
 }
+
+#endif
