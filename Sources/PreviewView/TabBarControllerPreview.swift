@@ -5,6 +5,8 @@
 //  Created by Josh Asbury on 7/8/21.
 //
 
+#if canImport(SwiftUI)
+
 import SwiftUI
 
 /// A custom parameter attribute that constructs a tab bar from a closure.
@@ -37,3 +39,5 @@ public struct TabBarControllerPreview: UIViewControllerRepresentable {
     public func makeUIViewController(context: Context) -> some UIViewController { tabBarController }
     public func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {}
 }
+
+#endif
