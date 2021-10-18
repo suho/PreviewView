@@ -5,6 +5,8 @@
 //  Created by Josh Asbury on 7/8/21.
 //
 
+#if canImport(SwiftUI)
+
 import SwiftUI
 
 /// A custom parameter attribute that constructs a navigation stack from a closure.
@@ -58,3 +60,5 @@ public struct NavigationControllerPreview: UIViewControllerRepresentable {
     public func makeUIViewController(context: Context) -> some UIViewController { navigationController }
     public func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {}
 }
+
+#endif
